@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--GOGE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- STAYL CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Portfolio-Contact</title>
+</head>
+<body>
+    <!-- HEADENG-SECTION -->
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header__brand">
+                <img src="./img/iconDT.png" alt="bran rasim">
+            </div>
+            <nav class="main-navigation">
+                <ul class="main-navigation__items">
+                    <li class="main-navigation__item active"><a class="main-navigation__link" href="index.html">Asosiy</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="#">Men haqimda</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="#">Xizmatlar</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="#">Mijozlar</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="#">Portfolio</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="#">Blog</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="#">Sheriklarim</a></li>
+                    <li class="main-navigation__item"><a class="main-navigation__link" href="contact.html">Bog'lanish</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- /HEADENG-SECTION -->
+
+    <div class="container">
+        <section class="contact">
+        <div class="section-title">
+            Men bilan bog'laning
+        </div>
+        <form action="/server.php" method="GET">
+            <textarea name="message" rows="10" placeholder="Xabaringizni kiriting"></textarea>
+            <div class="contact-wrapper">
+                <div class="contact__firtname">
+                    <input type="text" placeholder="Ismingizni kiriting" name="firtname">
+                </div>
+                <div class="contact__email">
+                    <input type="email" placeholder="Emayilingizni kiriting" name="email">
+                </div>
+            </div>
+            <input type="text" placeholder="Xat mazmuni" name="subject">
+            <button class="button contact__send" type="submit">Xabar jo'natish</button>
+        </form>
+        </section>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">pages</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- /Footer section -->
+</body>
+</html>
