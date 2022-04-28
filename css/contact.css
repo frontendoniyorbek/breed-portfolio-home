@@ -1,15 +1,15 @@
 .contact{
-  padding: 100px 20px;
+  padding: 6.25rem 1.25rem;
 }
 
 textarea, input {
   width: 100%;
-  padding: 14px;
-  margin-top: 20px;
+  padding: 0.875rem;
+  margin-top: 1.25rem;
   border: 1px solid #f0e9ff;
   border-radius: 5px;
-  padding-left: 18px;
-  font-size: 13px;
+  padding-left: 1.125rem;
+  font-size: 0.8125rem;
   background-color: transparent;
   color: #495057;
 }
@@ -26,15 +26,15 @@ input:focus{
 }
 
 .contact__firtname {
-  padding-right: 15px;
+  padding-right: 0.94rem;
   width: 50%;
 }
 
 .contact__email {
-  padding-left: 15px;
+  padding-left: 0.94rem;
   width: 50%;
 }
 
 .contact__send{
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
