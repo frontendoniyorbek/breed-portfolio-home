@@ -49,15 +49,6 @@
         font-display: swap;
     }
 
-    @font-face {../fonts/
-        font-family: 'Roboto';
-        src: url('../fonts/Roboto-Light.woff2') format('woff2'),
-            url('../fonts/Roboto-Light.woff') format('woff');
-        font-weight: 300;
-        font-style: normal;
-        font-display: swap;
-    }
-
     @font-face {
         font-family: 'Roboto';
         src: url('../fonts/Roboto-BlackItalic.woff2') format('woff2'),
@@ -129,6 +120,10 @@
     outline-offset: 3px;
 }
 
+a {
+    transition: all 0.3s ease-in-out;
+}
+
     /* CONTAINER */
     .container{
     width: 100%;
@@ -149,19 +144,13 @@
     z-index: 10;
 }
 
-    .main-header__brand {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0px 0.94rem;
+.main-header .container {
+    display: flex;
+    align-items: center;
 }
 
     .main-header__brand img {
     width: 64px;
-}
-
-    .main-navigation{
-    display: inline-block;
-    vertical-align: middle;
 }
 
     .main-navigation__item {
@@ -204,11 +193,8 @@
 
 .main-section {
     padding: 6.25rem 1.875rem;
-}
-
-.main-section > div {
-    width: 50%;
-    float: left ;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-section__img{
@@ -255,6 +241,7 @@
     border-radius: 5px;
     background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
     background-size: 200% auto;
+    transition: all .3s ease-in-out;
     color: #fff;
     cursor: pointer;
 }
@@ -265,11 +252,11 @@
 
 /*STATISTICS SECTION*/
 .statistics{
+    display: flex;
     padding-top: 6.25rem;
 }
 
 .statistics__item{
-    display: inline-block;
     background-color: #f8faff;
     text-align: center;
     padding: 0.3125rem 0.625rem;
@@ -352,16 +339,20 @@
 }
 
 .services-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-cards {
     padding-top: 6.25rem;
 }
 
 .services-card {
-    display:inline-block;
-    width: 30%;
     padding: 3.75rem 1.875rem;
     background-color: #f8faff;
     text-align: center;
     margin-right: 3%;
+    transition: all .4s ease;
 }
 
 .services-cars__title{
@@ -398,13 +389,16 @@
     padding-top: 6.25rem;
 }
 
+.client-item {
+    display: flex;
+    align-items: center;
+}
+
 .client-item > div {
-    width: 50%;
-    float: left;
+    flex: 1;
 }
 
 .clients-item__info{
-    padding-top: 3.125rem;
     padding-left: 3.125rem;
 }
 
@@ -506,8 +500,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(19, 69, 230, 0.9);
-    visibility: hidden;
     z-index: 1;
     transition: all 0.4s ease;
 }
@@ -518,6 +510,7 @@
     left: 80px;
     color: white;
     visibility: hidden;
+    opacity: 0;
     z-index: 1;
 }
 
@@ -530,12 +523,15 @@
     visibility: visible;
     top: 20px;
     left: 20px;
+    background: rgba(19, 69, 230, 0.9);
+
 }
 
 .portfolio-item:hover .portfolio-item__info{
     visibility: visible;
     bottom: 24px;
     left: 60px;
+    opacity: 1;
 }
 
 
@@ -545,12 +541,13 @@
 }
 
 .blog-items {
+    display: flex;
+    justify-content: space-between;
     margin-top: 3.125rem;
 }
 
 .blog-item {
-    display: inline-block;
-    width: 30%;
+    overflow: hidden;
     margin-right: 3%;
 }
 
@@ -560,6 +557,20 @@
 
 .blog-item:hover .blog-item__info {
     background-color: #fff;
+}
+
+.blog-item__image {
+    overflow: hidden;
+}
+
+.blog-item__image img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all .4s ease;
+}
+
+.blog-item:hover .blog-item__image img {
+    transform: scale(1.1);
 }
 
 .blog-item__info {
@@ -633,13 +644,13 @@
 /* Partners section styles */
 .partners {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     padding-top: 6.25rem;
 }
 
 .partner {
-    display: inline-block;
     padding: 0;
 }
 
@@ -722,36 +733,6 @@
 .footer__text {
     color: #797979;
 }
-
-
-/* MEDI */
-@media only screen and (max-width: 767px) {
-    .container {
-        width: 96%;
-    }
-
-
-    /* MAIN-SECTION */
-    .main-navigation {
-        display: none;
-    }
-
-    .main-banner {
-        background:none;
-        min-height: auto;
-    }
-
-    .main-section__img {
-        display: none;
-    }
-
-    .main-section__action {
-        display: none;
-    }
-
-    .main-section > div {
-        width: 100%;
-    }
 
 
     /* STATISTICS-SECTION */
