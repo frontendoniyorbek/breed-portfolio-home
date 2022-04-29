@@ -1,4 +1,8 @@
 /* GLOBL */
+:root{
+    --pink-color:#efb6df;
+    --dark-blue-color: #05364d;
+}
 * {
     box-sizing: border-box;
 }
@@ -31,7 +35,9 @@
         font-display: swap;
     }
 
-
+    html {
+        scroll-behavior: smooth;
+    }
 
 
     body{
@@ -45,7 +51,7 @@
 }
 
     *:focus{
-    outline: 2px dotted #05364D;
+    outline: 2px dotted var(--dark-blue-color);
     outline-offset: 3px;
 }
 
@@ -54,7 +60,7 @@ a {
 }
 
     /* CONTAINER */
-    .container{
+.container{
     width: 100%;
     max-width: 1140px;
     padding-left: 1.25rem;
@@ -63,7 +69,7 @@ a {
 }
 
     /* MAIN HEADER STYLES */
-    .main-header{
+.main-header{
     top: 0;
     left: 0;
     position: fixed;
@@ -78,17 +84,13 @@ a {
     align-items: center;
 }
 
-    .main-header__brand img {
-    width: 64px;
-}
-
     .main-navigation__item {
     display: inline-block;
     padding: 10px;
 }
 
     .main-navigation__item a{
-    color: #05364D;
+    color: var(--dark-blue-color);
     font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 1px;
@@ -97,10 +99,10 @@ a {
 }
 
     .main-navigation__item a:hover{
-    color: #efb6df;
+    color: var(--pink-color);
 }
     .main-navigation__item.active a{
-    color: #efb6df;
+    color: var(--pink-color);
 }
 
     .to-uppercase {
@@ -109,6 +111,11 @@ a {
 
     .clearfix{
     clear: both;
+}
+
+.main-header__brand img {
+    width: 64px;
+    object-fit: cover;
 }
 
 
@@ -141,11 +148,11 @@ a {
     font-family:"Roboto Condansed","Roboto","Arial" sans-serif;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-    color: #05364D;
+    color: var(--dark-blue-color);
 }
 
 .main-section__position{
-    color: #05364D;
+    color: var(--dark-blue-color);
     font-size: 1.5rem;
     margin-bottom: 1.25rem;
 }
@@ -232,7 +239,7 @@ a {
     font-size: 2.625rem;
     font-weight: 700;
     text-transform: capitalize;
-    color:#05364D;
+    color:var(--dark-blue-color);
 }
 
 .about-me__description{
@@ -282,7 +289,7 @@ a {
 }
 
 .services-cars__title{
-    color: #05364D;
+    color: var(--dark-blue-color);
     font-size: 1.25rem;
     margin: 2.1rem 0px 1.25rem;
     text-transform: uppercase;
@@ -294,7 +301,7 @@ a {
 }
 
 .services-card__link{
-    color: #05364D;
+    color: var(--dark-blue-color);
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
@@ -446,6 +453,7 @@ a {
 }
 
 .portfolio-item:hover .portfolio-item__overlay{
+    opacity: 0.9;
     visibility: visible;
     top: 20px;
     left: 20px;
@@ -523,7 +531,7 @@ a {
     font-size: 1.25rem;
     margin-top: 1.25rem;
     margin-bottom: 0.94rem;
-    color: #05364D;
+    color: var(--dark-blue-color);
     font-weight: 700;
 }
 
@@ -538,7 +546,7 @@ a {
     font-size: 0.8125rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: #05364D;
+    color: var(--dark-blue-color);
     cursor: pointer;
     text-decoration: none;
     transition: color 0.4s ease;
@@ -623,7 +631,7 @@ a {
 
 }
 .footer__navigation-item-link:hover {
-    color: #efb6df;
+    color: var(--pink-color);
 }
 
 .footer__social a {
@@ -640,7 +648,7 @@ a {
     text-align: center;
     background-color: #fff;
     border-radius: 36px;
-    color: #05364D;
+    color: var(--dark-blue-color);
     font-size: 1rem;
 }
 
