@@ -268,13 +268,14 @@ a {
 
 
 /* SERVIVICES SECTION */
-.services{
+.services {
     padding-top: 6.25rem;
 }
 
 .services-cards {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .services-cards {
@@ -317,6 +318,7 @@ a {
 .services-card:hover .services-card__link {
     color: #fff;
 }
+
 
 /* CLIENTS SECTION */
 .clients {
@@ -677,28 +679,19 @@ a {
 
 
 /* MEDI */
-@media only screen and (max-width: 767px) {
-    .container {
-        width: 92%;
-        padding: 0;
-    }
-
-
-    /* MAIN-SECTION */
+@media only screen and (max-width:991px) {
+    /* NAVIGATION-MENU */
     .main-navigation {
         display: none;
     }
 
-    .main-banner {
-        background:none;
-        min-height: auto;
+    .container {
+        width: 95%;
     }
 
+
+    /* MAIN-SECTION */
     .main-section__img {
-        display: none;
-    }
-
-    .main-section__action {
         display: none;
     }
 
@@ -706,16 +699,12 @@ a {
         width: 100%;
     }
 
-    .main-section__introduction {
-        font-size: 3rem;
-    }
 
-
-    /* STATISTICS-SECTION */
+    /* STATICS */
     .statistics__item {
         width: 100%;
-        margin-bottom: 10px;
-        margin-right: 0;
+        padding-top: 1rem;
+        text-align: center;
     }
 
 
@@ -723,6 +712,7 @@ a {
     .about-me {
         padding: 1.5rem 0;
     }
+
     .about-me > div {
         width: 100%;
     }
@@ -732,17 +722,19 @@ a {
     }
 
 
-    /* SERVICES-SECTION */
-    .services-cards {
-        padding: 1.5rem 0;
-        display: flex;
-        flex-direction: column;
+    /* SERVIVICES SECTION */
+    .services{
+        padding-top: 1.5rem 0;
     }
 
     .services-card {
-        width: 100%;
-        margin-right: 0;
+        width: 45%;
         margin-bottom: 20px;
+    }
+
+    .services-cards{
+        display: flex;
+        flex-wrap: wrap;
     }
 
 
@@ -767,6 +759,96 @@ a {
     }
 
 
+    /* BLOG */
+    .blog {
+        padding: 1.5rem 0;
+    }
+
+    .blog-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .blog-item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .blog-item__info {
+        width: 100%;
+    }
+
+
+        /* PARTNER */
+        .partners {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 0;
+        }
+
+        .partner {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 92%;
+        padding: 0;
+    }
+
+
+    /* MAIN-SECTION */
+    .main-banner {
+        background:none;
+        min-height: auto;
+    }
+
+    .main-section__action {
+        display: none;
+    }
+
+
+    .main-section__introduction {
+        font-size: 3rem;
+    }
+
+
+    /* STATISTICS-SECTION */
+    .statistics__item {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+
+    /* SERVICES-SECTION */
+    .services-cards {
+        padding: 1.5rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+
+    /* BLOG */
+    .blog-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+
     /* PORTFOLIO */
     .portfolio {
         padding: 1.5rem 0;
@@ -780,43 +862,6 @@ a {
     .portfolio-2,
     .portfolio-3 {
         position: static;
-    }
-
-
-    /* BLOG */
-    .blog {
-        padding: 1.5rem 0;
-    }
-
-    .blog-items {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .blog-item {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .blog-item__info {
-        width: 100%;
-    }
-
-
-    /* PARTNER */
-    .partners {
-        display: flex;
-        flex-direction: column;
-        padding: 1.5rem 0;
-    }
-
-    .partner {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 0;
-        margin-bottom: 10px;
     }
 
 
