@@ -762,7 +762,7 @@ a {
 
     .clients-item__img {
         width: 100%;
-        text-align: center;
+        object-fit: contain;
     }
 
 
