@@ -394,6 +394,12 @@ a {
     margin-right: 2.5rem;
 }
 
+.portfolio-filters {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
 
 /* POTFOLIO-ITEM */
 .portfolio {
@@ -401,18 +407,12 @@ a {
     padding-bottom: 6.25rem;
 }
 
-.portfolio-items{
+.portfolio-items {
     position: relative;
     margin-top: 3.125rem;
 }
 
-.portfolio-filters{
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-.portfolio-item{
+.portfolio-item {
     display: inline-block;
     position: relative;
     cursor: pointer;
@@ -420,23 +420,24 @@ a {
     padding: 0.625rem;
 }
 
-.portfolio-item-2{
+.portfolio-item-2 {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.portfolio-item-3{
+.portfolio-item-3 {
     position: absolute;
     top: 322px;
     right: 0;
 }
 
-.portfolio-item__img{
+.portfolio-item__img {
     width: 100%;
+    object-fit: cover;
 }
 
-.portfolio-item__overlay{
+.portfolio-item__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -446,7 +447,7 @@ a {
     transition: all 0.4s ease;
 }
 
-.portfolio-item__info{
+.portfolio-item__info {
     position: absolute;
     bottom: 44px;
     left: 80px;
@@ -456,12 +457,12 @@ a {
     z-index: 1;
 }
 
-.portfolio-item__info a{
+.portfolio-item__info a {
     color: white;
     text-decoration: none;
 }
 
-.portfolio-item:hover .portfolio-item__overlay{
+.portfolio-item:hover .portfolio-item__overlay {
     opacity: 0.9;
     visibility: visible;
     top: 20px;
@@ -470,7 +471,7 @@ a {
 
 }
 
-.portfolio-item:hover .portfolio-item__info{
+.portfolio-item:hover .portfolio-item__info {
     visibility: visible;
     bottom: 24px;
     left: 60px;
@@ -492,6 +493,12 @@ a {
 .blog-item {
     overflow: hidden;
     margin-right: 3%;
+}
+
+.blog-item__img {
+    width: 360px;
+    height: 310px;
+    object-fit: cover;
 }
 
 .blog-item:hover {
@@ -855,9 +862,16 @@ a {
     }
 
     .portfolio-item {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
         width: 100%;
+        padding: 0.625rem;
     }
 
+    .portfolio-item-3 {
+        top: 0px;
+    }
 
     .portfolio-2,
     .portfolio-3 {
